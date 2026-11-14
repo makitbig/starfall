@@ -1,0 +1,53 @@
+:root {
+  --ink: #1d1838;
+  --muted: #5d5880;
+  --bg: #f1effa;
+  --card: #ffffff;
+  --accent: #6a4bd8;
+  --top: #120d45;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #ece9ff;
+    --muted: #a9a3d6;
+    --bg: #0b0a24;
+    --card: #17153a;
+    --accent: #ffd56b;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+header {
+  padding: 40px 16px 32px;
+  color: #f4f1ff;
+  background: radial-gradient(120% 90% at 50% 0%, #3b2a8e, var(--top));
+  text-align: center;
+}
+header img { width: 72px; height: 72px; border-radius: 16px; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+header h1 { margin: 10px 0 4px; font-size: 28px; }
+header h1 span { color: #f2c14e; }
+header p { margin: 0; color: rgba(244, 241, 255, 0.85); }
+nav.lang { margin-top: 14px; }
+nav.lang a { color: #f2c14e; font-weight: 600; }
+main { max-width: 720px; margin: 0 auto; padding: 24px 16px 48px; }
+section { margin-bottom: 16px; padding: 20px; border-radius: 16px; background: var(--card); }
+h2 { margin: 0 0 8px; font-size: 19px; }
+h3 { margin: 18px 0 4px; font-size: 16px; }
+p, li { color: var(--ink); }
+.muted { color: var(--muted); font-size: 14px; }
+a { color: var(--accent); }
+.btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 12px;
+  color: #fff;
+  background: #6a4bd8;
+  font-weight: 700;
+  text-decoration: none;
+}
+footer { text-align: center; color: var(--muted); font-size: 14px; padding: 0 16px 32px; }
